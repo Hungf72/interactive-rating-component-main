@@ -59,7 +59,7 @@
 }
 
 .rating-button:hover{
-    background-color: var(--Orange-500);
+    background-color: var(--White);
 }
 
 .rating-button.pressed{
@@ -80,7 +80,7 @@
 }
 
 .submit-button:active{
-    background-color: var(--Grey-500);
+    background-color: var(--White);
     color: var(--White);
 }
 
