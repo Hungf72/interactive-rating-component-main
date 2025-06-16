@@ -37,7 +37,7 @@
     background-color: var(--Grey-800);
     border-radius: 50%;
     padding: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-top: 1rem;
 }
 
@@ -72,6 +72,7 @@
     padding: 0.5rem 1.5rem;
     background-color: var(--Orange-500);
     border: none;
+    font-weight: 700;
 }
 
 .submit-button:hover{
