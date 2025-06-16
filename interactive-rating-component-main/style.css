@@ -1,0 +1,190 @@
+/* custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+:root{
+    --White: hsl(0, 100%, 100%);
+    --Grey-500: hsl(217, 12%, 63%);
+    --Grey-700: hsl(216, 12%, 54%);
+    --Grey-800: hsl(213, 19%, 24%);
+    --Grey-900: hsl(213, 19%, 18%);
+    --Grey-950: hsl(216, 12%, 8%);
+    --Orange-500: hsl(25, 97%, 53%)
+}
+
+.html, body{
+    background-color: var(--Grey-950);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 30%;
+}
+
+.card{
+    background-color: var(--Grey-900);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem !important;
+}
+
+.star-icon{
+    width: 10%;
+    padding-bottom: 1.5rem;
+    background-color: var(--Grey-800);
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.rating-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.rating-button{
+    background-color: var(--Grey-800);
+    color: var(--White);
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.rating-button:hover{
+    background-color: var(--Orange-500);
+}
+
+.rating-button.pressed{
+    background-color: var(--Orange-500);
+    color: var(--White);
+}
+
+.submit-button{
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--Orange-500);
+    border: none;
+}
+
+.submit-button:hover{
+    background-color: var(--Grey-800);
+    color: var(--White);
+}
+
+.submit-button:active{
+    background-color: var(--Grey-500);
+    color: var(--White);
+}
+
+.thank-you-message {
+    display: none;
+    text-align: center;
+    color: var(--White);
+    background-color: var(--Grey-900);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+
+.rating-msg {
+    color: var(--Orange-500);
+    background-color: var(--Grey-500);
+    border-radius: 20px;
+    padding: 0.25rem 0rem;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+h2{
+    padding: 2.5rem 0 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .card {
+        padding: 1rem;
+    }
+    .star-icon {
+        width: 20%;
+        padding-bottom: 1rem;
+    }
+    .rating-button {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    .submit-button {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .thank-you-message {
+        width: 90%;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 90%;
+    }
+    .card {
+        padding: 1rem;
+    }
+    .star-icon {
+        width: 20%;
+        padding-bottom: 1rem;
+    }
+    .rating-button {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    .submit-button {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .thank-you-message {
+        width: 90%;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 100%;
+    }
+    .card {
+        padding: 1rem;
+    }
+    .star-icon {
+        width: 20%;
+        padding-bottom: 1rem;
+    }
+    .rating-button {
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 0.8rem;
+    }
+    .submit-button {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .thank-you-message {
+        width: 100%;
+        padding: 1rem;
+    }
+}
